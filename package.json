@@ -1,0 +1,23 @@
+{
+  "name": "@lacledeslan/power-api-poller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node ./index.js",
+    "dev": "NODE_ENV=development node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "influxdb-nodejs": "^2.11.0",
+    "node-cron": "^2.0.3",
+    "superagent": "^4.1.0"
+  },
+  "config": {
+    "emoncmsHost": "https://power.lacledeslan.net/emoncms",
+    "influxHost": "172.30.12.55:8086",
+    "influxDb": "power"
+  }
+}
